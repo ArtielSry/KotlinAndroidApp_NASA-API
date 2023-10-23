@@ -5,8 +5,8 @@ import android.os.Bundle
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
-import com.art.NasaApp.R
-import com.art.NasaApp.databinding.ActivityMainBinding
+import com.art.nasaapp.R
+import com.art.nasaapp.databinding.ActivityMainBinding
 //  import dagger.hilt.android.AndroidEntryPoint
 
 // @AndroidEntryPoint

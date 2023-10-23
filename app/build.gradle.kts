@@ -5,11 +5,10 @@ plugins {
     id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
     id("androidx.navigation.safeargs.kotlin")
-
 }
 
 android {
-    namespace = "com.art.NasaApp"
+    namespace = "com.art.nasaapp"
     compileSdk = 34
 
     defaultConfig {
@@ -38,7 +37,6 @@ android {
     }
 
 
-
     java {
         toolchain {
             languageVersion.set(JavaLanguageVersion.of(17))
@@ -48,18 +46,6 @@ android {
 
 dependencies {
 
-    //dataStore
-    implementation("androidx.datastore:datastore-preferences:1.0.0")
-
-
-
-    //Camera X
-    val cameraVersion = "1.2.3"
-    implementation("androidx.camera:camera-core:${cameraVersion}")
-    implementation("androidx.camera:camera-camera2:${cameraVersion}")
-    implementation("androidx.camera:camera-lifecycle:${cameraVersion}")
-    implementation("androidx.camera:camera-view:${cameraVersion}")
-    implementation("androidx.camera:camera-extensions:${cameraVersion}")
 
     // navigationComponent
     val navVersion = "2.7.3"
