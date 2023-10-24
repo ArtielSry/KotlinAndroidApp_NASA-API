@@ -19,21 +19,20 @@ import kotlinx.coroutines.withContext
 class ApiNasaFragment : Fragment() {
 
     private val retrofit = RetrofitHelper.getInstance()
+    private val KEY = "XOJdwTyWpwDO73VFUjZXIKSva0O0AtYcQQtvsFdb"
+
 
     private var _binding: FragmentApiNasaBinding? = null
     private val binding get() = _binding!!
 
-    private val KEY = "XOJdwTyWpwDO73VFUjZXIKSva0O0AtYcQQtvsFdb"
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        initUI()
+    }
 
-        _binding = FragmentApiNasaBinding.inflate(inflater,container,false)
-
+    private fun initUI() {
         initRetrofit()
-        return inflater.inflate(R.layout.fragment_api_nasa, container, false)
     }
 
 
@@ -50,7 +49,11 @@ class ApiNasaFragment : Fragment() {
                     withContext(Dispatchers.Main) {
                         Toast.makeText(requireContext(), "${response.date}", Toast.LENGTH_SHORT)
                             .show()
-                        Toast.makeText(requireContext(), "${response.expedition}", Toast.LENGTH_SHORT)
+                        Toast.makeText(
+                            requireContext(),
+                            "${response.expedition}",
+                            Toast.LENGTH_SHORT
+                        )
                             .show()
                         Toast.makeText(requireContext(), "${response.title}", Toast.LENGTH_SHORT)
                             .show()
@@ -65,5 +68,13 @@ class ApiNasaFragment : Fragment() {
 
     }
 
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+        _binding = FragmentApiNasaBinding.inflate(layoutInflater, container, false)
+        return binding.root
+    }
 
 }
