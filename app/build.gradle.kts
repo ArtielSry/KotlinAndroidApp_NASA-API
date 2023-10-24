@@ -50,7 +50,8 @@ dependencies {
     implementation("androidx.navigation:navigation-fragment-ktx:$navVersion")
     implementation("androidx.navigation:navigation-ui-ktx:$navVersion")
 
-
+    //Picasso
+    implementation ("com.squareup.picasso:picasso:2.8")
 
     //corrutinas
     implementation("androidx.activity:activity-ktx:1.8.0")

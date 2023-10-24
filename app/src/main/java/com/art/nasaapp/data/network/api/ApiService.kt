@@ -13,4 +13,5 @@ data class NasaResponse(
     @SerializedName("date") val date: String,
     @SerializedName("title") val title: String,
     @SerializedName("explanation") val expedition: String,
+    @SerializedName("url") val url: String,
 )

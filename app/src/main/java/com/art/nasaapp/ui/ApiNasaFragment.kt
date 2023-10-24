@@ -11,6 +11,7 @@ import androidx.lifecycle.lifecycleScope
 import com.art.nasaapp.R
 import com.art.nasaapp.data.network.api.RetrofitHelper
 import com.art.nasaapp.databinding.FragmentApiNasaBinding
+import com.squareup.picasso.Picasso
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
@@ -47,16 +48,10 @@ class ApiNasaFragment : Fragment() {
                 if (response != null) {
 
                     withContext(Dispatchers.Main) {
-                        Toast.makeText(requireContext(), "${response.date}", Toast.LENGTH_SHORT)
-                            .show()
-                        Toast.makeText(
-                            requireContext(),
-                            "${response.expedition}",
-                            Toast.LENGTH_SHORT
-                        )
-                            .show()
-                        Toast.makeText(requireContext(), "${response.title}", Toast.LENGTH_SHORT)
-                            .show()
+                        binding.tvTitle.text = response.title
+                        binding.tvDate.text = response.date
+                        binding.tvExplanation.text = response.expedition
+                        Picasso.get().load(response.url).into(binding.ivUrl)
 
                     }
 
