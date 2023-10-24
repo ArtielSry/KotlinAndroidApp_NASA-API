@@ -3,8 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <string name="NASA">Home</string>
+    <string name="NASA">Today</string>
     <string name="UNIVERSE">Explore</string>
+    <string name="HOME">Home</string>
 
 
     <string name="news">Latest news</string>

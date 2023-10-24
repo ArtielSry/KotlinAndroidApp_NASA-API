@@ -7,6 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.isVisible
 import androidx.lifecycle.lifecycleScope
 import com.art.nasaapp.R
 import com.art.nasaapp.data.network.api.RetrofitHelper
@@ -48,6 +49,7 @@ class ApiNasaFragment : Fragment() {
                 if (response != null) {
 
                     withContext(Dispatchers.Main) {
+                        binding.pbLoading.isVisible = false
                         binding.tvTitle.text = response.title
                         binding.tvDate.text = response.date
                         binding.tvExplanation.text = response.expedition
@@ -56,7 +58,6 @@ class ApiNasaFragment : Fragment() {
                     }
 
                 }
-
 
             }
         }

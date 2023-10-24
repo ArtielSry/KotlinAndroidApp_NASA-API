@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_graph"
-    app:startDestination="@id/apiNasaFragment">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/universe3dFragment"
@@ -15,4 +15,10 @@
         android:name="com.art.nasaapp.ui.ApiNasaFragment"
         android:label="fragment_api_nasa"
         tools:layout="@layout/fragment_api_nasa" />
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.art.nasaapp.ui.HomeFragment"
+        android:label="fragment_home_nasa"
+        tools:layout="@layout/fragment_home" />
 </navigation>
