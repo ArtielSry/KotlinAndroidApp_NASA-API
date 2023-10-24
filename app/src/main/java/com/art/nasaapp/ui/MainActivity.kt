@@ -2,15 +2,23 @@ package com.art.nasaapp.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
 import com.art.nasaapp.R
+import com.art.nasaapp.data.network.api.RetrofitHelper
 import com.art.nasaapp.databinding.ActivityMainBinding
-//  import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
-// @AndroidEntryPoint
+
 class MainActivity : AppCompatActivity() {
+
+    private val retrofit = RetrofitHelper.getInstance()
+    private val KEY = "XOJdwTyWpwDO73VFUjZXIKSva0O0AtYcQQtvsFdb"
+
 
     private lateinit var binding: ActivityMainBinding
     private lateinit var navController: NavController
@@ -26,7 +34,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun initNavigation() {
-        val navHost = supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
+        val navHost =
+            supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment
         navController = navHost.navController
         binding.bottomNavigationView.setupWithNavController(navController)
     }

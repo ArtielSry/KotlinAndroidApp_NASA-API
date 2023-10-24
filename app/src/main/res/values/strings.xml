@@ -5,4 +5,7 @@
 
     <string name="NASA">Home</string>
     <string name="UNIVERSE">Explore</string>
+
+
+    <string name="news">Latest news</string>
 </resources>
