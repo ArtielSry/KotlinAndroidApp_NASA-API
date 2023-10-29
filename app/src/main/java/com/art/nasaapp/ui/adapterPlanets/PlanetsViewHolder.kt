@@ -10,9 +10,11 @@ class PlanetsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     fun render(planets: Planets) {
 
-        binding.tvPlanet.text = planets.name.toString()
+        val context = binding.tvPlanet.context
+
+        binding.tvPlanet.text = context.getString(planets.name)
         binding.ivPlanet.setImageResource(planets.img)
-        binding.tvDuration.text = planets.duration.toString()
-        binding.tvTemperature.text = planets.temperature.toString()
+        binding.tvDuration.text = context.getString(planets.duration)
+        binding.tvTemperature.text = context.getString(planets.temperature)
     }
 }

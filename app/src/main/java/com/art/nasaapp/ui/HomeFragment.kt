@@ -27,7 +27,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun initRecyclerView() {
-        binding.rvPlanets.layoutManager = LinearLayoutManager(requireContext())
+        binding.rvPlanets.layoutManager = LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, false)
         binding.rvPlanets.adapter = PlanetsAdapter(PlanetsProvider.planetList)
     }
 

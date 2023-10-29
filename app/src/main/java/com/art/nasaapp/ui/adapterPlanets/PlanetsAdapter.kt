@@ -19,6 +19,4 @@ class PlanetsAdapter(private val planetList: List<Planets>) :
     }
 
     override fun getItemCount(): Int = planetList.size
-
-
 }

@@ -5,8 +5,7 @@ import com.art.nasaapp.R
 class PlanetsProvider {
     companion object {
 
-        val planetList = listOf<Planets>(
-
+        val planetList = listOf(
             Planets(
                 R.string.sun,
                 R.drawable.sol_planet,
@@ -25,6 +24,18 @@ class PlanetsProvider {
                 R.drawable.venus_planet,
                 R.string.venusDayDuration,
                 R.string.venusTemperature
+            ),
+            Planets(
+                R.string.earth,
+                R.drawable.tierra_planet,
+                R.string.earthDayDuration,
+                R.string.earthTemperature
+            ),
+            Planets(
+                R.string.moon,
+                R.drawable.luna_planet,
+                R.string.moonDayDuration,
+                R.string.moonTemperature
             ),
             Planets(
                 R.string.mars,
@@ -57,13 +68,6 @@ class PlanetsProvider {
                 R.drawable.neptuno_planet,
                 R.string.neptuneDayDuration,
                 R.string.neptuneTemperature
-            ),
-
-            Planets(
-                R.string.moon,
-                R.drawable.luna_planet,
-                R.string.moonDayDuration,
-                R.string.moonTemperature
             )
         )
     }
