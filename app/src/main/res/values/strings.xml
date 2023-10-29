@@ -1,12 +1,50 @@
 <resources>
     <string name="app_name">NasaApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
     <string name="NASA">Today</string>
     <string name="UNIVERSE">Explore</string>
     <string name="HOME">Home</string>
 
-
     <string name="news">Latest news</string>
+    <string name="duration">Duration:</string>
+    <string name="temperature">Temperature:</string>
+    <string name="planets">Planet</string>
+
+    <string name="earth">Earth</string>
+    <string name="sun">Sun</string>
+    <string name="mercury">Mercury</string>
+    <string name="moon">Moon</string>
+    <string name="jupiter">Jupiter</string>
+    <string name="uranus">Uranus</string>
+    <string name="mars">Mars</string>
+    <string name="venus">Venus</string>
+    <string name="neptune">Neptune</string>
+    <string name="pluto">Pluto</string>
+    <string name="saturn">Saturn</string>
+
+    <string name="earthDayDuration">24 hours</string>
+    <string name="sunDayDuration">Sun</string>
+    <string name="mercuryDayDuration">58,6 Earth days</string>
+    <string name="moonDayDuration">24,5  Earth days</string>
+    <string name="jupiterDayDuration">9 hours, 56 minutes</string>
+    <string name="uranusDayDuration">17 hours, 14 minutes</string>
+    <string name="marsDayDuration">24 hours, 37 minutes</string>
+    <string name="venusDayDuration">116 Earth days</string>
+    <string name="neptuneDayDuration">14 hours, 6 minutes</string>
+    <string name="plutoDayDuration">153 hours</string>
+    <string name="saturnDayDuration">10 hours, 34 minutes</string>
+
+    <string name="earthTemperature">average 15º</string>
+    <string name="sunTemperature">15 million degrees Kelvin (°K)</string>
+    <string name="mercuryTemperature">max 465°C - min -184°C</string>
+    <string name="moonTemperature">varies between -184º during the night to 214º during the day</string>
+    <string name="jupiterTemperature">average -153°C</string>
+    <string name="uranusTemperature">average -184°C</string>
+    <string name="marsTemperature"> max 36°C - min -123°C</string>
+    <string name="venusTemperature">average 449°C</string>
+    <string name="neptuneTemperature">-223°C</string>
+    <string name="plutoTemperature">-234°C</string>
+    <string name="saturnTemperature">average -184°C</string>
 </resources>
