@@ -28,7 +28,7 @@
         android:layout_height="wrap_content"
         app:menu="@menu/menu_nav"
 
-        android:background="@color/blackNav"
+        android:background="@color/black"
         app:itemActiveIndicatorStyle="@null"
         app:itemIconTint="@color/menu_nav_selector"
         app:itemTextColor="@color/menu_nav_selector"

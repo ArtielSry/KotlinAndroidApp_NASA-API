@@ -14,7 +14,5 @@ class PlanetsViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
         binding.tvPlanet.text = context.getString(planets.name)
         binding.ivPlanet.setImageResource(planets.img)
-        binding.tvDuration.text = context.getString(planets.duration)
-        binding.tvTemperature.text = context.getString(planets.temperature)
     }
 }

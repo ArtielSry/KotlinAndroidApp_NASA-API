@@ -4,18 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    android:padding="5dp"
+    android:background="@color/transparent"
     tools:context=".ui.ApiNasaFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:background="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lastest news by  "
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:fontFamily="@font/roboto"
+            android:textColor="@color/white" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            app:tint="@color/red"
+            android:src="@drawable/nasa"/>
+
+    </LinearLayout>
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,26 +55,14 @@
             android:textAlignment="center">
 
 
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="150dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_margin="10dp"
-                android:src="@drawable/nasa"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:tint="@color/red" />
-
             <TextView
                 android:id="@+id/tvTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-
                 android:textSize="20sp" />
 
             <TextView

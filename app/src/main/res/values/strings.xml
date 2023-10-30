@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">NasaApp</string>
 
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="system">Solar System</string>
 
     <string name="NASA">Today</string>
     <string name="UNIVERSE">Explore</string>
@@ -12,17 +12,17 @@
     <string name="temperature">Temperature:</string>
     <string name="planets">Planet</string>
 
-    <string name="earth">Earth</string>
-    <string name="sun">Sun</string>
-    <string name="mercury">Mercury</string>
-    <string name="moon">Moon</string>
-    <string name="jupiter">Jupiter</string>
-    <string name="uranus">Uranus</string>
-    <string name="mars">Mars</string>
-    <string name="venus">Venus</string>
-    <string name="neptune">Neptune</string>
-    <string name="pluto">Pluto</string>
-    <string name="saturn">Saturn</string>
+    <string name="earth">E a r t h</string>
+    <string name="sun">S u n</string>
+    <string name="mercury">M e r c u r y</string>
+    <string name="moon">M o o n</string>
+    <string name="jupiter">J u p i t e r</string>
+    <string name="uranus">U r a n u s</string>
+    <string name="mars">M a r s</string>
+    <string name="venus">V e n u s</string>
+    <string name="neptune">N e p t u n e</string>
+    <string name="pluto">P l u t o</string>
+    <string name="saturn">S a t u r n</string>
 
     <string name="earthDayDuration">24 hours</string>
     <string name="sunDayDuration">Sun</string>
