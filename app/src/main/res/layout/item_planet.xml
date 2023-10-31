@@ -54,6 +54,7 @@
                 android:fontFamily="@font/roboto"
                 android:textAllCaps="true"
 
+                android:letterSpacing="0.2"
                 android:paddingVertical="5dp"
                 android:textColor="@color/whiteLight"
                 android:textSize="8sp"

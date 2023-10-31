@@ -12,17 +12,17 @@
     <string name="temperature">Temperature:</string>
     <string name="planets">Planet</string>
 
-    <string name="earth">E a r t h</string>
-    <string name="sun">S u n</string>
-    <string name="mercury">M e r c u r y</string>
-    <string name="moon">M o o n</string>
-    <string name="jupiter">J u p i t e r</string>
-    <string name="uranus">U r a n u s</string>
-    <string name="mars">M a r s</string>
-    <string name="venus">V e n u s</string>
-    <string name="neptune">N e p t u n e</string>
-    <string name="pluto">P l u t o</string>
-    <string name="saturn">S a t u r n</string>
+    <string name="earth">Earth</string>
+    <string name="sun">Sun</string>
+    <string name="mercury">Mercury</string>
+    <string name="moon">Moon</string>
+    <string name="jupiter">Jupiter</string>
+    <string name="uranus">Uranus</string>
+    <string name="mars">Mars</string>
+    <string name="venus">Venus</string>
+    <string name="neptune">Neptune</string>
+    <string name="pluto">Pluto</string>
+    <string name="saturn">Saturn</string>
 
     <string name="earthDayDuration">24 hours</string>
     <string name="sunDayDuration">Sun</string>
@@ -36,17 +36,18 @@
     <string name="plutoDayDuration">153 hours</string>
     <string name="saturnDayDuration">10 hours, 34 minutes</string>
 
-    <string name="earthTemperature">average 15º</string>
+    <string name="earthTemperature">15º</string>
     <string name="sunTemperature">15 million degrees Kelvin (°K)</string>
     <string name="mercuryTemperature">max 465°C - min -184°C</string>
     <string name="moonTemperature">varies between -184º during the night to 214º during the day</string>
-    <string name="jupiterTemperature">average -153°C</string>
-    <string name="uranusTemperature">average -184°C</string>
-    <string name="marsTemperature"> max 36°C - min -123°C</string>
-    <string name="venusTemperature">average 449°C</string>
+    <string name="jupiterTemperature">-153°C</string>
+    <string name="uranusTemperature">-184°C</string>
+    <string name="marsTemperature">max 36°C - min -123°C</string>
+    <string name="venusTemperature">449°C</string>
     <string name="neptuneTemperature">-223°C</string>
     <string name="plutoTemperature">-234°C</string>
-    <string name="saturnTemperature">average -184°C</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="saturnTemperature">-184°C</string>
+
+
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

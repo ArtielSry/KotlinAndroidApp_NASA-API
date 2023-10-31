@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="400dp"
+    android:layout_height="wrap_content"
 
     android:layout_gravity="bottom"
     android:background="@color/transparent"
@@ -20,60 +20,119 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
-        <View
-            android:id="@+id/view2"
-            android:layout_width="match_parent"
-            android:layout_height="20dp" />
-
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:src="@drawable/ic_lines"
-            android:layout_gravity="center"/>
+            app:tint="@color/whiteLight" />
 
     </FrameLayout>
 
-
-    <ImageView
-        android:id="@+id/bottomImg"
-
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center_horizontal"
-
-        android:src="@drawable/sun"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
-
     <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
         android:orientation="vertical"
+        android:padding="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
-        <TextView
-            android:id="@+id/bottomName"
-            android:layout_width="wrap_content"
+
+        <ImageView
+            android:id="@+id/bottomImg"
+
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+
+            android:src="@drawable/sun"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/whiteLight"
-            android:textSize="20sp" />
+            android:layout_margin="20dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/bottomDay"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
-        <TextView
-            android:id="@+id/bottomTemperature"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Planet: "
+                    android:textColor="@color/grayLight"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/bottomName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/whiteLight"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:text="Day duration: "
+                    android:textColor="@color/grayLight"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/bottomDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textAlignment="textEnd"
+
+                    android:textColor="@color/whiteLight"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Temperature (average): "
+                    android:textColor="@color/grayLight"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/bottomTemperature"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:textAlignment="textEnd"
+
+                    android:textColor="@color/whiteLight"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,10 +10,20 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment
 class BottomSheetFragment : BottomSheetDialogFragment() {
 
     companion object {
-        fun newInstance(data: String): BottomSheetFragment {
+        fun newInstance(
+            data: String,
+            temperature: String,
+            duration: String,
+            img: Int
+        ): BottomSheetFragment {
             val fragment = BottomSheetFragment()
             val args = Bundle()
             args.putString("key", data)
+            args.putString("keyT", temperature)
+            args.putString("keyD", duration)
+
+            args.putInt("keyImg", img)
+
             fragment.arguments = args
 
 
@@ -32,7 +42,23 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
     private fun initUI() {
 
         val data = arguments?.getString("key")
+        val temperature = arguments?.getString("keyT")
+        val duration = arguments?.getString("keyD")
+
+
+        val img = arguments?.getInt("keyImg", 0)
+
         binding.bottomName.text = data
+        binding.bottomTemperature.text = temperature
+        binding.bottomDay.text = duration
+
+        if (img != 0) {
+
+            if (img != null) {
+                binding.bottomImg.setImageResource(img)
+            }
+        }
+
     }
 
     override fun onCreateView(
