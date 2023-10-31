@@ -49,11 +49,11 @@ class ApiNasaFragment : Fragment() {
                 if (response != null) {
 
                     withContext(Dispatchers.Main) {
+                        Picasso.get().load(response.url).into(binding.ivUrl)
                         binding.pbLoading.isVisible = false
                         binding.tvTitle.text = response.title
                         binding.tvDate.text = response.date
                         binding.tvExplanation.text = response.expedition
-                        Picasso.get().load(response.url).into(binding.ivUrl)
 
                     }
 
