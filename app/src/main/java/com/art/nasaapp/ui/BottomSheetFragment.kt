@@ -44,8 +44,6 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         val data = arguments?.getString("key")
         val temperature = arguments?.getString("keyT")
         val duration = arguments?.getString("keyD")
-
-
         val img = arguments?.getInt("keyImg", 0)
 
         binding.bottomName.text = data
