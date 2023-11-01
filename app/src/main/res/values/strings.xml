@@ -24,6 +24,20 @@
     <string name="pluto">Pluto</string>
     <string name="saturn">Saturn</string>
 
+    <string name="earthData">The Earth is the densest and fifth largest planet in the Solar System. The chemical elements most present are iron (about 32%), oxygen (about 30%), silicon (about 15%). Scientists believe that the Earth`s core is composed mainly of iron (about 88%).</string>
+    <string name="sunData">The Sun lies at the heart of the solar system, where it is by far the largest object. It is approximately 109 times the diameter of the Earth, so that about a million planets like ours could fit inside it.</string>
+    <string name="mercuryData">Mercury is the fastest planet in the solar system.
+In turn, as a consequence of being the closest to the Sun, it has the shortest year of all the planets: it takes 88 days to make a complete revolution around the great star.</string>
+    <string name="moonData">The Moon is 400 times closer to the Earth than the Sun, and it is also 400 times smaller as seen from our planet than this star. "That means that when the Moon passes between the Earth and the Sun it covers it exactly, and because of this is that we can have total eclipses of the Sun."</string>
+    <string name="jupiterData">The planet Jupiter is named after the Roman king of the gods for good reason. It is the largest planet in the solar system and has more moons than any other planet. It is the fifth planet from the Sun in the solar system and the largest of all.</string>
+    <string name="uranusData">The first planet found with the aid of a telescope, Uranus was discovered in 1781 by astronomer William Herschel (officially), although he originally thought it was a comet or a star. Two years later, the object was universally accepted as a new planet</string>
+    <string name="marsData">Mars has the highest known mountain in the entire solar system. We know it as Olympus Mons ("Mount Olympus") and this huge mountain is approximately 25 km high and 600 km in diameter. There is nothing like it on Earth or anywhere else in our solar system.</string>
+    <string name="venusData">Venus takes 225 Earth days to go all the way around the Sun. This means that, on Venus, a day is slightly longer than a year. Because the lengths of the day and year are similar, a day on Venus is not like a day on Earth. Here on Earth, the Sun rises and sets once a day.</string>
+    <string name="neptuneData">It is more than 30 times farther from the Sun than the Earth. Neptune is very similar to Uranus. It is composed of a thick mixture of water, ammonia, and methane over a solid center the size of Earth. Its atmosphere is composed of hydrogen, helium, and methane.</string>
+    <string name="plutoData">Since 2006, Pluto has gone from being the last planet in the solar system to being considered a dwarf planet, falling outside the classification of what is considered a full-fledged planet. The icy dwarf planet. The snow that usually falls on Pluto is red in color.</string>
+    <string name="saturnData">From time to time new rings are discovered on Saturn that remain within its own orbit. To date, a total of 16 rings have been observed on the planet.</string>
+
+
     <string name="earthDayDuration">24 hours</string>
     <string name="sunDayDuration">Sun</string>
     <string name="mercuryDayDuration">58,6 Earth days</string>
@@ -39,7 +53,7 @@
     <string name="earthTemperature">15º</string>
     <string name="sunTemperature">15 million degrees Kelvin (°K)</string>
     <string name="mercuryTemperature">max 465°C - min -184°C</string>
-    <string name="moonTemperature">varies between -184º during the night to 214º during the day</string>
+    <string name="moonTemperature">-184º night to 214º day</string>
     <string name="jupiterTemperature">-153°C</string>
     <string name="uranusTemperature">-184°C</string>
     <string name="marsTemperature">max 36°C - min -123°C</string>
@@ -47,6 +61,8 @@
     <string name="neptuneTemperature">-223°C</string>
     <string name="plutoTemperature">-234°C</string>
     <string name="saturnTemperature">-184°C</string>
+
+
 
 
     <string name="hello_blank_fragment">Hello blank fragment</string>

@@ -7,5 +7,6 @@ data class Planets(
     var name: Int,
     var img: Int,
     var duration: Int,
-    var temperature: Int
+    var temperature: Int,
+    var info: Int
 )

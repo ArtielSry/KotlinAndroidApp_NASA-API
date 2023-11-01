@@ -14,7 +14,8 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
             data: String,
             temperature: String,
             duration: String,
-            img: Int
+            img: Int,
+            infoToSend: String
         ): BottomSheetFragment {
             val fragment = BottomSheetFragment()
             val args = Bundle()
@@ -23,6 +24,7 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
             args.putString("keyD", duration)
 
             args.putInt("keyImg", img)
+            args.putString("keyInfo", infoToSend)
 
             fragment.arguments = args
 
@@ -45,10 +47,12 @@ class BottomSheetFragment : BottomSheetDialogFragment() {
         val temperature = arguments?.getString("keyT")
         val duration = arguments?.getString("keyD")
         val img = arguments?.getInt("keyImg", 0)
+        val info = arguments?.getString("keyInfo")
 
         binding.bottomName.text = data
         binding.bottomTemperature.text = temperature
         binding.bottomDay.text = duration
+        binding.bottomInfo.text = info
 
         if (img != 0) {
 

@@ -42,6 +42,7 @@ class HomeFragment : Fragment() {
         val dataToSend = context?.getString(planets.name).toString()
         val temperatureToSend = context?.getString(planets.temperature).toString()
         val durationToSend = context?.getString(planets.duration).toString()
+        val infoToSend = context?.getString(planets.info).toString()
 
         val imgToSend = planets.img
 
@@ -49,7 +50,8 @@ class HomeFragment : Fragment() {
             dataToSend,
             temperatureToSend,
             durationToSend,
-            imgToSend
+            imgToSend,
+            infoToSend
         )
         bottomSheetFragment.show(parentFragmentManager, bottomSheetFragment.tag)
 
