@@ -9,11 +9,11 @@ Solar System App is an Android application developed in Kotlin that allows you t
 Fragment Navigation: The app utilizes the Android Navigation Component to easily move between the following fragments:
 - List of planets -> Planet details.
 - Daily astronomical news.
-- 3D space model.
+- Live video from NASA.
 
 Details Bottom Sheet: When you click on a planet in the planet details fragment, a Bottom Sheet Dialog will slide up, showing additional information such as scientific data, images, and fun facts about the selected planet.
 Daily Astronomical News: In the daily astronomical news fragment, the app uses Retrofit to fetch the most recent astronomical news from NASA's API. You can stay updated with the latest space news.
-3D Space Model: In the 3D space model fragment, you'll enjoy an interactive 3D representation of space. You can explore and zoom in or out to get a better view of the universe.
+Live Video from NASA: In this fragment you can watch TV NASA.
 
 ## How to Use the App
 Installation: Clone this repository or download the source code of the app.
@@ -27,8 +27,6 @@ Navigation: Use the bottom navigation bar at the bottom of the app to switch bet
 Explore Planets: In the planet list fragment, tap on a planet to view additional details in the planet details fragment.
 
 Read Astronomical News: In the astronomical news fragment, the latest news from NASA will be loaded automatically.
-
-Explore 3D Space: In the 3D space model fragment, use touch gestures to explore the 3D model.
 
 ## Requirements
 Android Studio
