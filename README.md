@@ -2,6 +2,9 @@
 
 Solar System App is an Android application developed in Kotlin that allows you to explore the solar system. With this app, you can navigate between different fragments to learn more about the planets, view the daily astronomical news provided by NASA, and explore a 3D model of space. Below, you will find information about key features and how to use the app.
 
+![547shots_so](https://github.com/ArtielSry/KotlinAndroidApp_NASA-API/assets/113340763/45689256-74da-42c2-abcd-711380f659f8)
+![544shots_so](https://github.com/ArtielSry/KotlinAndroidApp_NASA-API/assets/113340763/1b37b9c3-f60f-4b6a-bd36-af1cc924ca7d)
+
 ## Key Features
 Fragment Navigation: The app utilizes the Android Navigation Component to easily move between the following fragments:
 - List of planets -> Planet details.
